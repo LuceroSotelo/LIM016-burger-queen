@@ -74,12 +74,6 @@ import { environment } from '../environments/environment';
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
-
-    // OJO
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore()),
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
